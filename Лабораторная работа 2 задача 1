@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  double a, b, c;
+
+  cout << "Введите длину первого отрезка: ";
+  cin >> a;
+
+  cout << "Введите длину второго отрезка: ";
+  cin >> b;
+
+  cout << "Введите длину третьего отрезка: ";
+  cin >> c;
+
+  if (a + b > c && a + c > b && b + c > a) {
+    cout << "Треугольник можно построить" << endl;
+  } else {
+    cout << "Треугольник нельзя построить" << endl;
+  }
+
+  return 0;
+}
